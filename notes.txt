@@ -1,0 +1,6 @@
+1.Aller sur la Google Developer Console
+2.Dans Identifiants/Credentials, cliquer sur Créer Identifiants et choisir OAuth
+3.Origines et redirection: localhost:5000
+4.Noter le client ID
+5.Ajouter le script https://apis.google.com/js/api.js
+https://developers.google.com/identity/sign-in/web/sign-in
