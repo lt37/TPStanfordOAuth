@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/webStorage.js"></script>
+        <script type="text/javascript" src="js/indexedDatabase.js"></script>
+
+        <title>Affichage des données</title>
+    </head>
+    <body>
+
+        <div id="formulaire">
+
+            <h1>Consulter un contact</h1>
+
+            <span class="text">Clé / Id : <input type="text" id="key"><input type="button" id="affichageWebStorage" value="Chercher WebStorage"></span>
+            <input type="button" id="affichageWebSQL" value="Chercher WebSQL">
+            <input type="button" id="affichageIndexedDB" value="Chercher IndexedDB">
+            <br>
+
+            <label id="nom">Nom : </label>
+            <br>
+            <label id="prenom">Prenom : </label>
+            <br>
+            <label id="civilite">Civilité : </label>
+            <br>
+            <label id="rueVoie">Rue et numéro voie : </label>
+            <br>
+            <label id="codePostal">Code postal : </label>
+            <br>
+            <label id="ville">Ville : </label>
+            <br>
+            <label id="pays">Pays : </label>
+            <br>
+            <label id="numTel">Num tél : </label>
+            <br>
+            <br>
+            <div id="boutons">
+                <input class="bouton" type="button" value="Effacer l'entrée web storage" id="delEntryWS"><input class="bouton" type="button" value="Effacer l'entrée WebSql" id="delEntrySQL"><input class="bouton" type="button" value="Effacer l'entrée IndexedDB" id="delEntryIDB">
+                <br>
+                <input class="bouton" type="button" value="Effacer la base web storage" id="delBDDWS"><input class="bouton" type="button" value="Effacer la BDD WebSql" id="delBDDSQL"><input class="bouton" type="button" value="Effacer la BDD IndexedDB" id="delBDDIDB">
+                <br>
+
+                <a href="formulaire.html">Retour</a>
+            </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/test.js"></script>
+    <script type="text/javascript" src="js/sjcl.js"></script>
+
+    <title>Gestionnaire de secrets</title>
+
+</head>
+<body>
+
+<div id="formulaire">
+
+    <h1>Chiffrer un nouveau message </h1>
+
+    <br>
+
+    <div class="align">
+        <label class="txt">Mot de passe </label><input type="text" id="mdp"/>
+        <br>
+    </div>
+    <div class="align">
+        <label class="txt">Texte à chiffrer</label><input type="text" id="plaintext"/>
+        <br>
+    </div>
+
+    <div class="boutons">
+        <input type="button" value="Chiffrer" id="chiffrer"/>
+        <input type="button" value="Dechiffrer" id="dechiffrer">
+        <input type="button" value="Mes mdp chiffrés" id="afficheC">
+        <input type="button" value="Mes mdp déchiffrés" id="afficheD">
+    </div>
+
+    <div class="align">
+        <br>
+        <label class="txt" id="cryptogramme"></label>
+        <br>
+        <label class="txt" id="clair"></label>
+        <br>
+        <label class="txt" id="afficheCh"></label>
+        <br>
+        <label class="txt" id="afficheCl"></label>
+    </div>
+
+
+
+</div>
+</body>
+</html>

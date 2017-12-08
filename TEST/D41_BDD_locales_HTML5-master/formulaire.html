@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/webStorage.js"></script>
+        <script type="text/javascript" src="js/indexedDatabase.js"></script>
+        <script type="text/javascript" src="js/fileApi.js"></script>
+
+        <title>Gestionnaire de carnet d'adresses</title>
+
+    </head>
+    <body>
+
+        <div id="formulaire">
+
+            <h1>Créer un nouveau contact </h1>
+
+            <br>
+
+            <div class="align">
+                <label class="txt">Nom : </label><input type="text" id="nom"/>
+                <br>
+            </div>
+            <div class="align">
+                <label class="txt">Prenom : </label><input type="text" id="prenom"/>
+                <br>
+            </div>
+            <div class="align">
+                <label class="txt">Adresse mail : </label><input type="text" id="mail"/>
+                <br>
+            </div>
+            <div class="align">
+                <label class="txt">Civilité : </label> <br>
+                <label for="mr">Mr</label> <input type="radio" id="mr" name="civilite" value="Mr"/>
+                <label for="mme">Mme</label> <input type="radio" id="mme" name="civilite" value="Mme"/>
+                <br>
+            </div>
+            <div class="align">
+                <label class="txt">Rue et numéro de voie : </label><input type="text" id="rueVoie"/>
+                <br>
+            </div>
+            <div class="align">
+                <label class="txt">Code postal : </label><input type="text" id="codePostal"/>
+                <br>
+            </div>
+            <div class="align">
+                <label class="txt">Ville : </label><input type="text"  id="ville"/>
+                <br>
+            </div>
+            <div class="align">
+                <label class="txt">Pays : </label><input type="text" id="pays"/>
+                <br>
+            </div>
+            <div class="align">
+                <label class="txt">Numéro de téléphone : </label><input type="text" id="numTel"/>
+                <br>
+            </div>
+            <div class="boutons">
+                <input type="button" value="Enregistrer avec Web Storage" id="persistWebStorage"/>
+                <input type="button" value="Enregistrer avec Indexed WebSql" id="persistWebSql">
+                <input type="button" value="Enregistrer avec Indexed Database" id="persistIndexDB">
+
+                <br>
+                <input type="reset" value="Effacer champs"/>
+            </div>
+
+            <a href="affichage.html">Consulter le carnet</a>
+
+        </div>
+    </body>
+</html>
