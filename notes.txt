@@ -4,3 +4,20 @@
 4.Noter le client ID
 5.Ajouter le script https://apis.google.com/js/api.js
 https://developers.google.com/identity/sign-in/web/sign-in
+
+
+Google developers:
+>Créer un nouveau projet
+>Lui ajouter un ID OAuth
+>Copier l'ID et le mettre dans le code
+>ggwp
+
+
+Dans le fichier HTML:
+>Ajouter un "meta" avec l'ID et tout c'qu'il faut
+>Ajouter le div g-signin2
+
+Dans le fichier js:
+function onSignIn(googleUser) {
+	//code
+}
