@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/stylised_gestionnaire.css" media="all" />
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!--<script type="text/javascript" src="js/test.js"></script>-->
+    <script type="text/javascript" src="js/stylised_gestionnaire.js"></script>
+    <script type="text/javascript" src="js/sjcl.js"></script>
+    <meta name="google-signin-client_id" content="91201999290-vu10ej314t3rep1et7nie88se6kej98b.apps.googleusercontent.com">
+    <script type="text/javascript" src="js/platform.js"></script>
+
+    <title>Gestionnaire de secrets</title>
+
+</head>
+<body>
+
+<div id="contact-form">
+    <div>
+        <h1>Gestionnaire de secrets</h1>
+        <h4>Chiffrez et déchiffrez librement tous vos mots de passe!</h4>
+    </div>
+    <p id="failure">Oopsie...message not sent.</p>
+    <p id="success">Your message was sent successfully. Thank you!</p>
+
+    <form method="post" action="/">
+        <div>
+            <label for="website">
+                <span class="required">Site ou API associé : *</span>
+                <input type="text" id="website" name="name" value="" placeholder="Site ou API" required="required" tabindex="1" autofocus="autofocus" />
+            </label>
+        </div>
+        <div>
+            <label for="password">
+                <span class="required">Mot de passe : *</span>
+                <input type="password" id="password" name="password" value="" placeholder="Votre mot de passe" tabindex="2" required="required" />
+            </label>
+        </div>
+
+        <div>
+            <label for="message">
+                <span class="required">Vos mots de passe chiffrés/déchiffrés : *</span>
+                <textarea id="message" name="message" placeholder="" tabindex="5" required="required"></textarea>
+            </label>
+        </div>
+        <div>
+            <button name="submit" type="button" id="chiffrer" >CHIFFRER</button>
+        </div>
+        <div>
+            <button name="submit" type="button" id="dechiffrer">DECHIFFRER</button>
+        </div>
+
+    </form>
+
+    <div id="googleOAuth">
+        <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+    </div>
+
+</div>
+</body>
+</html>

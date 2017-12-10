@@ -2,6 +2,7 @@ var currentGoogleUser;
 
 function onSignIn(googleUser) {
     currentGoogleUser = googleUser.getBasicProfile();
+
 }
 
 $(document).ready(function() {
@@ -34,6 +35,7 @@ $(document).ready(function() {
 
     $("#afficherMdp").click(function() {
         var user = currentGoogleUser.getEmail();
+        console.log("user : "+user)
         var labelAfficheMdp = $("#afficheMdp");
         var passwords = JSON.parse(localStorage.getItem(user));
 
@@ -47,6 +49,7 @@ $(document).ready(function() {
         }
         else {
             var length = localStorage.length;
+            console.log("taille localstorage : "+length)
 
             var encryptedPassword, password, website;
 
