@@ -1,8 +1,0 @@
-
-body { font-family:calibri; font-size:12pt }
-label.lb {display:inline-block; width:130px }
-input[type='text'] {margin-bottom:10px; width:200px}
-select {margin-bottom:10px;}
-#autre {margin-left:130px;}
-
-.error {color:red ; padding-left:5px }
